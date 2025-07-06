@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>World Clock</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      width: 250px;
+      margin: 0;
+      padding: 10px;
+      background-color: #f4f4f4;
+    }
+    .city-row {
+      padding: 8px;
+      font-size: 16px;
+    }
+    .even {
+      background-color: #ffffff;
+    }
+    .odd {
+      background-color: #e6e6e6;
+    }
+	
+	.city-name {
+  color: black;
+  text-align: left;
+  flex: 1;
+}
+
+.city-time {
+  color: #B0003B;
+  font-weight: bold;
+  text-align: right;
+  min-width: 60px;
+}
+
+	
+  </style>
+</head>
+<body>
+  <div style="display: flex; justify-content: space-between; align-items: center; margin: 0; padding: 0;">
+    <h3 style="margin: 0;">World Clock</h3>
+    <a href="#" id="openOptions" style="font-size: 32px; text-decoration: none;">⚙️</a>
+  </div>
+  <div id="cityTimes" style="margin-top: 10px;"></div>
+  <script src="popup.js"></script>
+</body>
+</html>
